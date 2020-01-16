@@ -3,7 +3,7 @@
 	"displayName": "MasterProject",
 	"description": "Creation of specialized applications for boards",
 	"publisher" : "Enneary",
-	"repository" : "https://github.com/Enneary/projects",
+	"repository" : "https://github.com/Enneary/MasterProjectsExt",
 	"version": "0.0.1",
 	"enableProposedApi": false,
 	"engines": {
@@ -20,7 +20,7 @@
 		"commands": [
 			{
 				"command": "extension.StartApp",
-				"title": "Project",
+				"title": "New Project",
 				"category": "Module MasterProject"
 			}
 		]
