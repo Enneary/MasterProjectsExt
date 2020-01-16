@@ -1,0 +1,63 @@
+.invisible>table{
+	border: 0;
+	width: 95%;
+	padding: 10px;
+	text-align: left;
+}
+.invisible>td{
+	margin: 2px;
+	padding: 2px;
+}
+.dialog{
+	width: 100%;
+	padding: 0;
+}
+.dialog>td{
+	padding: 0;
+}
+.header_0{
+	padding: 3px;
+	font-size: 1.3em;
+	font-weight: 600;
+}
+
+.header_1{
+	font-style: italic;
+	text-align: right;
+	padding-right: 4px;
+}
+.header_td{
+	width: 180px;
+}
+.main_td{
+	width: 70%;
+	padding: 0px;
+	vertical-align: middle;
+}
+.inline_block{
+	display:block-inline;
+	width:100%;
+	position: relative;
+}
+.inline_block_text{
+	width:100%;
+}
+.inline_block_button{
+	float: left;
+}
+.input_text{
+	width:100%;
+	padding: 2px 2px 2px 5px ;
+	border: 0;
+	height: 24px;
+	box-sizing: border-box;
+}
+.select{
+	padding: 2px;
+	width: 100%;
+	text-align: center;
+	vertical-align: middle;
+}
+.button:hover{
+	cursor: pointer;
+}

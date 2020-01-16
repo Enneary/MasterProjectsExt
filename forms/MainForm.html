@@ -1,0 +1,196 @@
+
+
+<html>
+    <head>
+        <script src="${jquery}"></script>
+        <script src="${jquery-ui}"></script>
+        <link rel="stylesheet" href="${jquerycssUri}">
+        <link rel="stylesheet" href="${cssUri}">
+    <!--
+           <script src="jquery/jquery-3.4.1.js"></script>
+            <script src="jquery/jquery-ui.js"></script>
+            <link rel="stylesheet" href="css/jquery-ui.css">
+            <link rel="stylesheet" href="css/style.css">-->
+        <script>
+            $(document).ready(function() {
+                const vscode = acquireVsCodeApi();
+                $(".button").button();
+                $("#BoardId").selectmenu();
+                $( "input[name='CoreType']" ).checkboxradio();
+                $( "#tabs_board" ).tabs();
+                //диалоговое окно выбора папки проекта
+                $("#DirPathBtn").click(function(){
+                    vscode.postMessage({
+                        command: 'openFolderDialog',
+                        type: 'DirPath'
+                    });
+                });
+                //Изменение пути проекта в соответсвии с названием
+                $("#ProjectName").change(function(){
+                    $("#DirPath").change();
+                });
+                //Изменение пути проекта
+                $("#DirPath").change(function( event){
+                    $("#DirPathText").val($("#DirPath").val() + "\\" + $("#ProjectName").val());     
+                });
+
+                //открытие диалоги для выбора пути к компилятору
+                $("#CompilerPathBtn").click(function(){
+                    vscode.postMessage({
+                        command: 'openFolderDialog',
+                        type: 'CompilerPath'
+                    });
+                });
+                //Изменение пути к компилятору
+                $("#CompilerPath").change(function( event){
+                    $("#CompilerPathText").val($("#CompilerPath").val() );     
+                });
+                $("#BoardId").on('selectmenuchange', function() {
+                    let id = $("#BoardId").val();
+                    $(".CoreType").not("." + id).hide();
+                    $("tr." + id).show();
+                });
+                //Создание проекта с проверками
+                $("#BtnCreate").click( function( event ) {
+                    if(!$("#ProjectName").val()){
+                        vscode.postMessage({
+                            command: 'error',
+                            text: 'Project Name name counld not be empty!'
+                        });
+                        return;
+                    }
+                    if(!$("#DirPath").val()){
+                        vscode.postMessage({
+                            command: 'error',
+                            text: 'Directory name counld not be empty!'
+                        });
+                        return;
+                    }
+                    if(!$("#CompilerPath").val()){
+                        vscode.postMessage({
+                            command: 'error',
+                            text: 'You should specify the path to the compiler !'
+                        });
+                        return;
+                    }
+                    if($("input[name='CoreType']:checked").length == 0){
+                        vscode.postMessage({
+                            command: 'error',
+                            text: 'You should check a type of core !'
+                        });
+                        return; 
+                    }
+                    input = document.getElementById('DirPath');
+                    vscode.postMessage({
+                        command: 'createDir',
+                        json: {
+                            DirPath : $("#DirPath").val(),
+                            ProjectName:  $("#ProjectName").val(),
+                            BoardId: $("#BoardId").val(), 
+                            CompilerPath: $("#CompilerPath").val(),
+                            CoreType: $("input[name='CoreType']:checked").attr("id")
+                        }
+                    })
+                } );
+                
+                // Handle the message inside the webview
+                window.addEventListener('message', event => {
+                    const json = event.data; // The JSON data our extension sent
+                    switch (json.command) {
+                        case 'responseFolderPath': //Указали путь к папке
+                            $("#"+ json.type).val(json.folderPath);
+                            $("#"+ json.type).change();
+                            break;
+                    }
+                });
+
+            });
+            
+
+        </script>
+        <style>
+            
+        </style>
+    </head>
+    <body>
+        <br />
+        <div class="header_0">
+            Создание нового проекта
+        </div>
+        <table class="invisible">
+            
+            <tr>
+                <td class="header_td">
+                    <p class="header_1">  Название проекта: </p>
+                </td>
+                <td class="main_td" colspan="2">
+                    <div class=" ui-corner-all ui-widget ui-widget-content">
+                        <input id="ProjectName"   maxlength="20" value="" type="text" class="input_text" />
+                    </div>
+                </td>
+            </tr> 
+            <tr>
+                <td class="header_1">
+                    <p class="header_1"> Папка проекта: </p>
+                </td>
+                
+                <td style="width: 80px;">
+                    <input id="DirPath" hidden value="" />
+                    <input id="DirPathBtn" type="button"  value="Выбрать" class="inline_block_button button"   />
+                </td>
+                <td   class="main_td">
+                    <div class=" ui-corner-all ui-widget ui-widget-content">
+                        <input id="DirPathText" readonly  value="" type="text" class="input_text inline_block_text" />
+                    </div>
+                </td>
+            </tr>
+            
+            <tr>
+                <td class="header_1">
+                    <p class="header_1"> Выбор платы: </p>
+                </td>
+                <td  class="main_td" colspan="2">
+                    <select name="BoardId" id="BoardId" class="select">
+                        <option>MC12101</option>
+                        <option>MC12705</option>
+                    </select>
+                </td>
+            </tr>
+            <tr class="CoreType MC12101">
+                <td class="header_1">
+                    <p class="header_1"> Вид ядер </p>
+                </td>
+                <td  class="main_td" colspan="2">
+                    <label for="fixed">Fixed</label>
+                    <input type="radio" name="CoreType" id="fixed" checked>
+                    <label for="float">Float</label>
+                    <input type="radio" name="CoreType" id="float">
+                </td>
+            </tr>
+            <tr >
+                <td class="header_1">
+                    <p class="header_1"> Путь к компилятору: </p>
+                </td>
+                <td style="width: 80px;">
+                    <input id="CompilerPath" hidden value="" />
+                    <input id="CompilerPathBtn" type="button"  value="Выбрать" class="inline_block_button button"   />
+                </td>
+                <td   class="main_td">
+                    <div class=" ui-corner-all ui-widget ui-widget-content">
+                        <input id="CompilerPathText" readonly  value="" type="text" class="input_text inline_block_text" />
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="header_1" colspan="3">
+                    <br />
+                    <input type="button" id="BtnCreate" class="button"  value="Создать проект"  />
+                </td>
+               
+            </tr>
+        </table>
+        
+            
+        </div>
+    </body>
+</html>
