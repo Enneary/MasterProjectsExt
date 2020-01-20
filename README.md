@@ -3,7 +3,7 @@
 
 ## Extension commands
 
-* `extension.StartApp` calld by `Module MasterProject: New Project"` - it's to create the necessary folders and files for selected board by template project
+* `extension.StartApp` calld by `Module: New Project"` - it's to create the necessary folders and files for selected board by template project
 
 ### 0.0.1
 

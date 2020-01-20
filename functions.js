@@ -59,11 +59,11 @@ function CreateFiles(context, vscode, res){
                 Log( 0, err.message);
                 throw err
             }else{
-                vscode.window.showInformationMessage('Directory created successfully!');
                 //Копируем туда все файлы шаблона
                 let tempDir = path.join(context.extensionPath, "temp", res.BoardId.toUpperCase());
                 let tempDict = dict.Dictionary[res.BoardId];
                 copyFolderRecursiveSync(tempDir, newDir, tempDict, res, true);
+                vscode.window.showInformationMessage('Directory created successfully!');
 
             }
         });
@@ -74,13 +74,14 @@ function CreateFiles(context, vscode, res){
 }
 function copyFolderRecursiveSync(source, target, tempDict, res, first){
     var files = [];
-    if(!first){
+    var targetFolder = path.join( target, path.basename( source ) );
+   
+    //if(!first){
     //check if folder needs to be created or integrated
-        var targetFolder = path.join( target, path.basename( source ) );
         if ( !fs.existsSync( targetFolder ) ) {
             fs.mkdirSync( targetFolder );
         }
-    }
+    //}
     //copy
     if ( fs.lstatSync( source ).isDirectory() ) {
         files = fs.readdirSync( source );

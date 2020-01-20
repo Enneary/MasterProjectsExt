@@ -21,7 +21,7 @@
 			{
 				"command": "extension.StartApp",
 				"title": "New Project",
-				"category": "Module MasterProject"
+				"category": "Module"
 			}
 		]
 	},
