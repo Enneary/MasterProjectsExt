@@ -74,13 +74,16 @@ function CreateFiles(context, vscode, res){
 }
 function copyFolderRecursiveSync(source, target, tempDict, res, first){
     var files = [];
-    var targetFolder = path.join( target, path.basename( source ) );
-   
-    //if(!first){
+    var targetFolder = "";
+    if(first)
+        targetFolder = target; 
+    else
+        targetFolder = path.join( target, path.basename( source ) );
+    
     //check if folder needs to be created or integrated
-        if ( !fs.existsSync( targetFolder ) ) {
-            fs.mkdirSync( targetFolder );
-        }
+    if ( !fs.existsSync( targetFolder ) ) {
+        fs.mkdirSync( targetFolder );
+    }
     //}
     //copy
     if ( fs.lstatSync( source ).isDirectory() ) {
