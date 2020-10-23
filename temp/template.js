@@ -1,8 +1,8 @@
 const Dictionary = {
     "MC12101" : {
-        "launch.json" : ["CompilerPath", "ProjectName"],
-        "tasks.json" : ["CompilerPath", "DirPath", "ProjectName"],
-        "CMakeLists.txt" : ["CompilerPath", "CoreType"]
+        "launch.json" : ["ProjectName"],
+        "tasks.json" : ["DirPath", "ProjectName", "FlagP"],
+        "CMakeLists.txt" : ["CoreType", "CoreType_sp"]
     }
 };
 

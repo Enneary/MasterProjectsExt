@@ -78,6 +78,11 @@ function activate(context) {
 
 	context.subscriptions.push(disposable);
 
+	disposable = vscode.commands.registerCommand("extension.Disassembly", function(){
+
+	});
+	context.subscriptions.push(disposable);
+	
 }
 
 exports.activate = activate;

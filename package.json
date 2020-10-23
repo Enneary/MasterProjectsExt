@@ -3,8 +3,11 @@
 	"displayName": "MasterProject",
 	"description": "Creation of specialized applications for boards",
 	"publisher" : "Enneary",
-	"repository" : "https://github.com/Enneary/MasterProjectsExt",
-	"version": "0.0.1",
+	"repository": {
+        "type": "git",
+        "url": "https://github.com/Enneary/MasterProjectsExt"
+    },
+	"version": "0.1.0",
 	"enableProposedApi": false,
 	"engines": {
 		"vscode": "^1.41.0"

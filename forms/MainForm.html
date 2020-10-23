@@ -34,7 +34,7 @@
                     $("#DirPathText").val($("#DirPath").val() + "\\" + $("#ProjectName").val());     
                 });
 
-                //открытие диалоги для выбора пути к компилятору
+                /*//открытие диалоги для выбора пути к компилятору
                 $("#CompilerPathBtn").click(function(){
                     vscode.postMessage({
                         command: 'openFolderDialog',
@@ -44,12 +44,13 @@
                 //Изменение пути к компилятору
                 $("#CompilerPath").change(function( event){
                     $("#CompilerPathText").val($("#CompilerPath").val() );     
-                });
+                });*/
                 $("#BoardId").on('selectmenuchange', function() {
                     let id = $("#BoardId").val();
                     $(".CoreType").not("." + id).hide();
                     $("tr." + id).show();
                 });
+                
                 //Создание проекта с проверками
                 $("#BtnCreate").click( function( event ) {
                     if(!$("#ProjectName").val()){
@@ -66,13 +67,13 @@
                         });
                         return;
                     }
-                    if(!$("#CompilerPath").val()){
+                    /*if(!$("#CompilerPath").val()){
                         vscode.postMessage({
                             command: 'error',
                             text: 'You should specify the path to the compiler !'
                         });
                         return;
-                    }
+                    }*/
                     if($("input[name='CoreType']:checked").length == 0){
                         vscode.postMessage({
                             command: 'error',
@@ -87,8 +88,10 @@
                             DirPath : $("#DirPath").val(),
                             ProjectName:  $("#ProjectName").val(),
                             BoardId: $("#BoardId").val(), 
-                            CompilerPath: $("#CompilerPath").val(),
-                            CoreType: $("input[name='CoreType']:checked").attr("id")
+                            //CompilerPath: $("#CompilerPath").val(),
+                            CoreType: $("input[name='CoreType']:checked").attr("id"),
+                            CoreType_sp: $("input[name='CoreType']:checked").attr("id") == "fixed" ? "" : ("-"+$("input[name='CoreType']:checked").attr("id")),
+                            FlagP: $("input[name='CoreType']:checked").attr("id") == "fixed" ? "-p" : ""
                         }
                     })
                 } );
@@ -167,7 +170,7 @@
                     <input type="radio" name="CoreType" id="float">
                 </td>
             </tr>
-            <tr >
+           <!--<tr >
                 <td class="header_1">
                     <p class="header_1"> Путь к компилятору: </p>
                 </td>
@@ -180,7 +183,7 @@
                         <input id="CompilerPathText" readonly  value="" type="text" class="input_text inline_block_text" />
                     </div>
                 </td>
-            </tr>
+            </tr>-->
             <tr>
                 <td class="header_1" colspan="3">
                     <br />

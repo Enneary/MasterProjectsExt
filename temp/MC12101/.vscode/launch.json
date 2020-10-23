@@ -6,33 +6,17 @@
     "configurations": [
         {
             "name": "{ProjectName}_debug",
-            "type": "cppdbg",
+            "type": "module-debug",
             "request": "launch",
             "program": "${workspaceFolder}/build/test",
-            "args": [],
-            "stopAtEntry": true,
+            "executable": "${workspaceFolder}/build/test",
             "cwd": "${workspaceFolder}/src/",
-            "environment": [],
-            "externalConsole": true,
-            "MIMode": "gdb",
-            "miDebuggerPath": "{CompilerPath}/nmc-gdb.exe",
-            "miDebuggerServerAddress": "", // адрес устройства /dev/ttySN, где N - номер COM порта
-//            "logging": { "engineLogging": true, "trace": true, "traceResponse": true },
-            "sourceFileMap": {
-                // "<source-path>": "<target-path>"
-                "/cygdrive/d/" : "D:/",
-                "/cygdrive/c/" : "C:/"           
-            },
-            
-            "setupCommands": [
-                { 
-                    "description": "Remote debug enable",
-                    "text": "-gdb-set debug remote 1",
-                    "ignoreFailures": false
-               }
-            ],
-            "preLaunchTask": "{ProjectName}_run"
-            
+            "gdbpath": "nmc-gdb.exe",
+            "toolchainPrefix": "nmc",
+            "showDevDebugOutput": false, // отображать ли запросы gdb
+            "gdbTarget": "COMN", // адрес устройства COMN (/dev/ttySN), где N - номер COM порта                                 
+            "servertype": "external",
+            "preLaunchTask": "{ProjectName}_run",
         }
     ]
 }

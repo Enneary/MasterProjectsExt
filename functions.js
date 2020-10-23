@@ -1,19 +1,22 @@
 let path = require('path');
 let fs = require('fs');
 var dict = require('./temp/template.js');
+const { Uri } = require('vscode');
+const { url } = require('inspector');
 
+//вызов со стороны формы-клиента
 function CheckJson(vscode, panel, message){
     switch (message.command) {
-        case 'info':
+        case 'info': //вывести информационное окно
             Log(vscode,  1, message.text);
             return false;
-        case 'error':
+        case 'error': //вывод ошибки
             Log(vscode,  0, message.text);
             return false;
-        case 'openFolderDialog':
+        case 'openFolderDialog': //открыть диалог выбора папки
             OpenFolderDialog(vscode, panel, message.type);
             return;
-        case 'createDir':
+        case 'createDir'://создать проект по шаблону, проверка корректности пришедших параметров
             let res = message.json;
             if(!res){
                 Log(vscode,  0, 'No JSON param!');
@@ -27,10 +30,10 @@ function CheckJson(vscode, panel, message){
                 Log(vscode,  0, 'Directory name could not be empty!');
                 return false;
             }
-            if(!res.CompilerPath){
+            /*if(!res.CompilerPath){
                 Log(vscode,  0, 'You should specify the path to the compiler!');
                 return false;
-            }
+            }*/
             return true;
         default:
             Log(vscode,  0, 'Unknown command!');
@@ -38,6 +41,8 @@ function CheckJson(vscode, panel, message){
         
     }
 }
+
+//открытие диалога выбора папки
 function OpenFolderDialog(vscode, panel, type){
     vscode.window.showOpenDialog({
         canSelectMany: false,
@@ -50,6 +55,7 @@ function OpenFolderDialog(vscode, panel, type){
         panel.webview.postMessage({ command: 'responseFolderPath', folderPath: fileUri[0].fsPath , type : type});
     });
 }
+//создание файлов проекта
 function CreateFiles(context, vscode, res){
     //Создаем папку проекта
     let newDir = path.join(res.DirPath, res.ProjectName);
@@ -64,11 +70,11 @@ function CreateFiles(context, vscode, res){
                 let tempDict = dict.Dictionary[res.BoardId];
                 copyFolderRecursiveSync(tempDir, newDir, tempDict, res, true);
                 vscode.window.showInformationMessage('Directory created successfully!');
-
+                vscode.commands.executeCommand("vscode.openFolder", Uri.file(newDir), true); //vscode.openFolder(newDir, true); //3.commands.executeCommand('vscode.openFolder', newDir);
             }
         });
     }else{
-        Log( 0, 'Directory already exist!');
+        Log(vscode, 0, 'Directory already exist!');
         return;
     }
 }
@@ -103,12 +109,13 @@ function copyFileSync( source, target, tempDict, res ) {
 
     var targetFile = target;
 
-    //if target is a directory a new file with the same name will be created
+    //if target is a directory, a new file with the same name will be created
     if ( fs.existsSync( target ) ) {
         if ( fs.lstatSync( target ).isDirectory() ) {
             targetFile = path.join( target, path.basename( source ) );
         }
     }
+    
     let data = fs.readFileSync(source, 'utf8');
     if(tempDict){
         
