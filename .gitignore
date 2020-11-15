@@ -1,3 +1,4 @@
 node_modules
 .vscode-test/
 configViewer/configViewer.js
+*.vsix

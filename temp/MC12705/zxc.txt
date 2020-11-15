@@ -1,0 +1,577 @@
+Archive member included to satisfy reference by file (symbol)
+
+E:/Module/MC12705/mc12705_bsp_x64/lib\libnm6408load_arm.a(arm_start.o)
+                              (--whole-archive)
+E:/Module/MC12705/mc12705_bsp_x64/lib\libnm6408load_arm.a(arm_aux.o)
+                              (--whole-archive)
+E:/Module/MC12705/mc12705_bsp_x64/lib\libnm6408load_arm.a(arm_sync.o)
+                              (--whole-archive)
+E:/Module/MC12705/mc12705_bsp_x64/lib\libnm6408load_arm.a(arm_stub.o)
+                              (--whole-archive)
+E:/Module/MC12705/mc12705_bsp_x64/lib\libnm6408load_arm.a(arm_stop.o)
+                              (--whole-archive)
+E:/Module/MC12705/mc12705_bsp_x64/lib\libnm6408load_arm.a(arm_wrap.o)
+                              (--whole-archive)
+e:/module/mc12705/arm-sdk/arm-nm6408-eabihf/bin/../lib/gcc/arm-nm6408-eabihf/8.3.0/../../../../arm-nm6408-eabihf/lib\libg.a(lib_a-reent.o)
+                              E:/Module/MC12705/mc12705_bsp_x64/lib\libnm6408load_arm.a(arm_stub.o) (errno)
+e:/module/mc12705/arm-sdk/arm-nm6408-eabihf/bin/../lib/gcc/arm-nm6408-eabihf/8.3.0/../../../../arm-nm6408-eabihf/lib\libg.a(lib_a-impure.o)
+                              e:/module/mc12705/arm-sdk/arm-nm6408-eabihf/bin/../lib/gcc/arm-nm6408-eabihf/8.3.0/../../../../arm-nm6408-eabihf/lib\libg.a(lib_a-reent.o) (_impure_ptr)
+e:/module/mc12705/arm-sdk/arm-nm6408-eabihf/bin/../lib/gcc/arm-nm6408-eabihf/8.3.0/../../../../arm-nm6408-eabihf/lib\libg.a(lib_a-nano-freer.o)
+                              e:/module/mc12705/arm-sdk/arm-nm6408-eabihf/bin/../lib/gcc/arm-nm6408-eabihf/8.3.0/../../../../arm-nm6408-eabihf/lib\libg.a(lib_a-reent.o) (_free_r)
+e:/module/mc12705/arm-sdk/arm-nm6408-eabihf/bin/../lib/gcc/arm-nm6408-eabihf/8.3.0/../../../../arm-nm6408-eabihf/lib\libg.a(lib_a-nano-mallocr.o)
+                              e:/module/mc12705/arm-sdk/arm-nm6408-eabihf/bin/../lib/gcc/arm-nm6408-eabihf/8.3.0/../../../../arm-nm6408-eabihf/lib\libg.a(lib_a-nano-freer.o) (__malloc_free_list)
+e:/module/mc12705/arm-sdk/arm-nm6408-eabihf/bin/../lib/gcc/arm-nm6408-eabihf/8.3.0/../../../../arm-nm6408-eabihf/lib\libg.a(lib_a-sbrkr.o)
+                              e:/module/mc12705/arm-sdk/arm-nm6408-eabihf/bin/../lib/gcc/arm-nm6408-eabihf/8.3.0/../../../../arm-nm6408-eabihf/lib\libg.a(lib_a-nano-mallocr.o) (_sbrk_r)
+e:/module/mc12705/arm-sdk/arm-nm6408-eabihf/bin/../lib/gcc/arm-nm6408-eabihf/8.3.0/../../../../arm-nm6408-eabihf/lib\libg.a(lib_a-mlock.o)
+                              e:/module/mc12705/arm-sdk/arm-nm6408-eabihf/bin/../lib/gcc/arm-nm6408-eabihf/8.3.0/../../../../arm-nm6408-eabihf/lib\libg.a(lib_a-nano-freer.o) (__malloc_lock)
+
+Allocating common symbols
+Common symbol       size              file
+
+errno               0x4               e:/module/mc12705/arm-sdk/arm-nm6408-eabihf/bin/../lib/gcc/arm-nm6408-eabihf/8.3.0/../../../../arm-nm6408-eabihf/lib\libg.a(lib_a-reent.o)
+
+Discarded input sections
+
+ .text          0x0000000000000000        0x0 E:/Module/MC12705/mc12705_bsp_x64/lib\libnm6408load_arm.a(arm_start.o)
+ .data          0x0000000000000000        0x0 E:/Module/MC12705/mc12705_bsp_x64/lib\libnm6408load_arm.a(arm_start.o)
+ .bss           0x0000000000000000        0x0 E:/Module/MC12705/mc12705_bsp_x64/lib\libnm6408load_arm.a(arm_start.o)
+ .text.vectors_reset
+                0x0000000000000000      0x680 E:/Module/MC12705/mc12705_bsp_x64/lib\libnm6408load_arm.a(arm_start.o)
+ .text          0x0000000000000000        0x0 E:/Module/MC12705/mc12705_bsp_x64/lib\libnm6408load_arm.a(arm_aux.o)
+ .data          0x0000000000000000        0x0 E:/Module/MC12705/mc12705_bsp_x64/lib\libnm6408load_arm.a(arm_aux.o)
+ .bss           0x0000000000000000        0x0 E:/Module/MC12705/mc12705_bsp_x64/lib\libnm6408load_arm.a(arm_aux.o)
+ .text._arm_irq_handler
+                0x0000000000000000        0x4 E:/Module/MC12705/mc12705_bsp_x64/lib\libnm6408load_arm.a(arm_aux.o)
+ .text._arm_svc_handler
+                0x0000000000000000        0x4 E:/Module/MC12705/mc12705_bsp_x64/lib\libnm6408load_arm.a(arm_aux.o)
+ .text._arm_fiq_handler
+                0x0000000000000000        0x4 E:/Module/MC12705/mc12705_bsp_x64/lib\libnm6408load_arm.a(arm_aux.o)
+ .text._arm_und_handler
+                0x0000000000000000        0x4 E:/Module/MC12705/mc12705_bsp_x64/lib\libnm6408load_arm.a(arm_aux.o)
+ .text.arm_abort_handler
+                0x0000000000000000        0x4 E:/Module/MC12705/mc12705_bsp_x64/lib\libnm6408load_arm.a(arm_aux.o)
+ .comment       0x0000000000000000       0x22 E:/Module/MC12705/mc12705_bsp_x64/lib\libnm6408load_arm.a(arm_aux.o)
+ .text          0x0000000000000000        0x0 E:/Module/MC12705/mc12705_bsp_x64/lib\libnm6408load_arm.a(arm_sync.o)
+ .data          0x0000000000000000        0x0 E:/Module/MC12705/mc12705_bsp_x64/lib\libnm6408load_arm.a(arm_sync.o)
+ .bss           0x0000000000000000        0x0 E:/Module/MC12705/mc12705_bsp_x64/lib\libnm6408load_arm.a(arm_sync.o)
+ .text.acl_hostSyncArray
+                0x0000000000000000       0xa8 E:/Module/MC12705/mc12705_bsp_x64/lib\libnm6408load_arm.a(arm_sync.o)
+ .text.acl_hostSync
+                0x0000000000000000       0x84 E:/Module/MC12705/mc12705_bsp_x64/lib\libnm6408load_arm.a(arm_sync.o)
+ .comment       0x0000000000000000       0x22 E:/Module/MC12705/mc12705_bsp_x64/lib\libnm6408load_arm.a(arm_sync.o)
+ .text          0x0000000000000000        0x0 E:/Module/MC12705/mc12705_bsp_x64/lib\libnm6408load_arm.a(arm_stub.o)
+ .data          0x0000000000000000        0x8 E:/Module/MC12705/mc12705_bsp_x64/lib\libnm6408load_arm.a(arm_stub.o)
+ .bss           0x0000000000000000        0x4 E:/Module/MC12705/mc12705_bsp_x64/lib\libnm6408load_arm.a(arm_stub.o)
+ .stub._open    0x0000000000000000        0x8 E:/Module/MC12705/mc12705_bsp_x64/lib\libnm6408load_arm.a(arm_stub.o)
+ .stub._close   0x0000000000000000        0x8 E:/Module/MC12705/mc12705_bsp_x64/lib\libnm6408load_arm.a(arm_stub.o)
+ .stub._execve  0x0000000000000000       0x18 E:/Module/MC12705/mc12705_bsp_x64/lib\libnm6408load_arm.a(arm_stub.o)
+ .stub._fork    0x0000000000000000       0x18 E:/Module/MC12705/mc12705_bsp_x64/lib\libnm6408load_arm.a(arm_stub.o)
+ .stub._fstat   0x0000000000000000       0x10 E:/Module/MC12705/mc12705_bsp_x64/lib\libnm6408load_arm.a(arm_stub.o)
+ .stub._getpid  0x0000000000000000        0x8 E:/Module/MC12705/mc12705_bsp_x64/lib\libnm6408load_arm.a(arm_stub.o)
+ .stub._isatty  0x0000000000000000       0x28 E:/Module/MC12705/mc12705_bsp_x64/lib\libnm6408load_arm.a(arm_stub.o)
+ .stub._kill    0x0000000000000000       0x18 E:/Module/MC12705/mc12705_bsp_x64/lib\libnm6408load_arm.a(arm_stub.o)
+ .stub._link    0x0000000000000000       0x18 E:/Module/MC12705/mc12705_bsp_x64/lib\libnm6408load_arm.a(arm_stub.o)
+ .stub._lseek   0x0000000000000000        0x8 E:/Module/MC12705/mc12705_bsp_x64/lib\libnm6408load_arm.a(arm_stub.o)
+ .stub._sbrk    0x0000000000000000       0x48 E:/Module/MC12705/mc12705_bsp_x64/lib\libnm6408load_arm.a(arm_stub.o)
+ .stub._read    0x0000000000000000       0x18 E:/Module/MC12705/mc12705_bsp_x64/lib\libnm6408load_arm.a(arm_stub.o)
+ .stub._stat    0x0000000000000000       0x10 E:/Module/MC12705/mc12705_bsp_x64/lib\libnm6408load_arm.a(arm_stub.o)
+ .stub._times   0x0000000000000000        0x8 E:/Module/MC12705/mc12705_bsp_x64/lib\libnm6408load_arm.a(arm_stub.o)
+ .stub._unlink  0x0000000000000000       0x18 E:/Module/MC12705/mc12705_bsp_x64/lib\libnm6408load_arm.a(arm_stub.o)
+ .stub._wait    0x0000000000000000       0x18 E:/Module/MC12705/mc12705_bsp_x64/lib\libnm6408load_arm.a(arm_stub.o)
+ .stub._write   0x0000000000000000       0x18 E:/Module/MC12705/mc12705_bsp_x64/lib\libnm6408load_arm.a(arm_stub.o)
+ .comment       0x0000000000000000       0x22 E:/Module/MC12705/mc12705_bsp_x64/lib\libnm6408load_arm.a(arm_stub.o)
+ .text          0x0000000000000000        0x0 E:/Module/MC12705/mc12705_bsp_x64/lib\libnm6408load_arm.a(arm_stop.o)
+ .data          0x0000000000000000        0x0 E:/Module/MC12705/mc12705_bsp_x64/lib\libnm6408load_arm.a(arm_stop.o)
+ .bss           0x0000000000000000        0x0 E:/Module/MC12705/mc12705_bsp_x64/lib\libnm6408load_arm.a(arm_stop.o)
+ .text          0x0000000000000000        0x0 E:/Module/MC12705/mc12705_bsp_x64/lib\libnm6408load_arm.a(arm_wrap.o)
+ .data          0x0000000000000000        0x0 E:/Module/MC12705/mc12705_bsp_x64/lib\libnm6408load_arm.a(arm_wrap.o)
+ .bss           0x0000000000000000        0x0 E:/Module/MC12705/mc12705_bsp_x64/lib\libnm6408load_arm.a(arm_wrap.o)
+ .data          0x0000000000000000        0x0 CMakeFiles/simple.elf.dir/src/simple.c.obj
+ .bss           0x0000000000000000        0x0 CMakeFiles/simple.elf.dir/src/simple.c.obj
+ .text          0x0000000000000000        0x0 e:/module/mc12705/arm-sdk/arm-nm6408-eabihf/bin/../lib/gcc/arm-nm6408-eabihf/8.3.0/../../../../arm-nm6408-eabihf/lib\libg.a(lib_a-reent.o)
+ .data          0x0000000000000000        0x0 e:/module/mc12705/arm-sdk/arm-nm6408-eabihf/bin/../lib/gcc/arm-nm6408-eabihf/8.3.0/../../../../arm-nm6408-eabihf/lib\libg.a(lib_a-reent.o)
+ .bss           0x0000000000000000        0x0 e:/module/mc12705/arm-sdk/arm-nm6408-eabihf/bin/../lib/gcc/arm-nm6408-eabihf/8.3.0/../../../../arm-nm6408-eabihf/lib\libg.a(lib_a-reent.o)
+ .text.cleanup_glue
+                0x0000000000000000       0x2c e:/module/mc12705/arm-sdk/arm-nm6408-eabihf/bin/../lib/gcc/arm-nm6408-eabihf/8.3.0/../../../../arm-nm6408-eabihf/lib\libg.a(lib_a-reent.o)
+ .text._reclaim_reent
+                0x0000000000000000       0xf4 e:/module/mc12705/arm-sdk/arm-nm6408-eabihf/bin/../lib/gcc/arm-nm6408-eabihf/8.3.0/../../../../arm-nm6408-eabihf/lib\libg.a(lib_a-reent.o)
+ .debug_info    0x0000000000000000      0xa9c e:/module/mc12705/arm-sdk/arm-nm6408-eabihf/bin/../lib/gcc/arm-nm6408-eabihf/8.3.0/../../../../arm-nm6408-eabihf/lib\libg.a(lib_a-reent.o)
+ .debug_abbrev  0x0000000000000000      0x2d3 e:/module/mc12705/arm-sdk/arm-nm6408-eabihf/bin/../lib/gcc/arm-nm6408-eabihf/8.3.0/../../../../arm-nm6408-eabihf/lib\libg.a(lib_a-reent.o)
+ .debug_loc     0x0000000000000000      0x145 e:/module/mc12705/arm-sdk/arm-nm6408-eabihf/bin/../lib/gcc/arm-nm6408-eabihf/8.3.0/../../../../arm-nm6408-eabihf/lib\libg.a(lib_a-reent.o)
+ .debug_aranges
+                0x0000000000000000       0x28 e:/module/mc12705/arm-sdk/arm-nm6408-eabihf/bin/../lib/gcc/arm-nm6408-eabihf/8.3.0/../../../../arm-nm6408-eabihf/lib\libg.a(lib_a-reent.o)
+ .debug_ranges  0x0000000000000000       0x30 e:/module/mc12705/arm-sdk/arm-nm6408-eabihf/bin/../lib/gcc/arm-nm6408-eabihf/8.3.0/../../../../arm-nm6408-eabihf/lib\libg.a(lib_a-reent.o)
+ .debug_line    0x0000000000000000      0x319 e:/module/mc12705/arm-sdk/arm-nm6408-eabihf/bin/../lib/gcc/arm-nm6408-eabihf/8.3.0/../../../../arm-nm6408-eabihf/lib\libg.a(lib_a-reent.o)
+ .debug_str     0x0000000000000000      0x63d e:/module/mc12705/arm-sdk/arm-nm6408-eabihf/bin/../lib/gcc/arm-nm6408-eabihf/8.3.0/../../../../arm-nm6408-eabihf/lib\libg.a(lib_a-reent.o)
+ .comment       0x0000000000000000       0x22 e:/module/mc12705/arm-sdk/arm-nm6408-eabihf/bin/../lib/gcc/arm-nm6408-eabihf/8.3.0/../../../../arm-nm6408-eabihf/lib\libg.a(lib_a-reent.o)
+ .debug_frame   0x0000000000000000       0x5c e:/module/mc12705/arm-sdk/arm-nm6408-eabihf/bin/../lib/gcc/arm-nm6408-eabihf/8.3.0/../../../../arm-nm6408-eabihf/lib\libg.a(lib_a-reent.o)
+ COMMON         0x0000000000000000        0x4 e:/module/mc12705/arm-sdk/arm-nm6408-eabihf/bin/../lib/gcc/arm-nm6408-eabihf/8.3.0/../../../../arm-nm6408-eabihf/lib\libg.a(lib_a-reent.o)
+ .text          0x0000000000000000        0x0 e:/module/mc12705/arm-sdk/arm-nm6408-eabihf/bin/../lib/gcc/arm-nm6408-eabihf/8.3.0/../../../../arm-nm6408-eabihf/lib\libg.a(lib_a-impure.o)
+ .data          0x0000000000000000        0x0 e:/module/mc12705/arm-sdk/arm-nm6408-eabihf/bin/../lib/gcc/arm-nm6408-eabihf/8.3.0/../../../../arm-nm6408-eabihf/lib\libg.a(lib_a-impure.o)
+ .bss           0x0000000000000000        0x0 e:/module/mc12705/arm-sdk/arm-nm6408-eabihf/bin/../lib/gcc/arm-nm6408-eabihf/8.3.0/../../../../arm-nm6408-eabihf/lib\libg.a(lib_a-impure.o)
+ .data._impure_ptr
+                0x0000000000000000        0x4 e:/module/mc12705/arm-sdk/arm-nm6408-eabihf/bin/../lib/gcc/arm-nm6408-eabihf/8.3.0/../../../../arm-nm6408-eabihf/lib\libg.a(lib_a-impure.o)
+ .data.impure_data
+                0x0000000000000000      0x418 e:/module/mc12705/arm-sdk/arm-nm6408-eabihf/bin/../lib/gcc/arm-nm6408-eabihf/8.3.0/../../../../arm-nm6408-eabihf/lib\libg.a(lib_a-impure.o)
+ .rodata._global_impure_ptr
+                0x0000000000000000        0x4 e:/module/mc12705/arm-sdk/arm-nm6408-eabihf/bin/../lib/gcc/arm-nm6408-eabihf/8.3.0/../../../../arm-nm6408-eabihf/lib\libg.a(lib_a-impure.o)
+ .debug_info    0x0000000000000000      0x905 e:/module/mc12705/arm-sdk/arm-nm6408-eabihf/bin/../lib/gcc/arm-nm6408-eabihf/8.3.0/../../../../arm-nm6408-eabihf/lib\libg.a(lib_a-impure.o)
+ .debug_abbrev  0x0000000000000000      0x1b8 e:/module/mc12705/arm-sdk/arm-nm6408-eabihf/bin/../lib/gcc/arm-nm6408-eabihf/8.3.0/../../../../arm-nm6408-eabihf/lib\libg.a(lib_a-impure.o)
+ .debug_aranges
+                0x0000000000000000       0x18 e:/module/mc12705/arm-sdk/arm-nm6408-eabihf/bin/../lib/gcc/arm-nm6408-eabihf/8.3.0/../../../../arm-nm6408-eabihf/lib\libg.a(lib_a-impure.o)
+ .debug_line    0x0000000000000000      0x1a0 e:/module/mc12705/arm-sdk/arm-nm6408-eabihf/bin/../lib/gcc/arm-nm6408-eabihf/8.3.0/../../../../arm-nm6408-eabihf/lib\libg.a(lib_a-impure.o)
+ .debug_str     0x0000000000000000      0x601 e:/module/mc12705/arm-sdk/arm-nm6408-eabihf/bin/../lib/gcc/arm-nm6408-eabihf/8.3.0/../../../../arm-nm6408-eabihf/lib\libg.a(lib_a-impure.o)
+ .comment       0x0000000000000000       0x22 e:/module/mc12705/arm-sdk/arm-nm6408-eabihf/bin/../lib/gcc/arm-nm6408-eabihf/8.3.0/../../../../arm-nm6408-eabihf/lib\libg.a(lib_a-impure.o)
+ .text          0x0000000000000000        0x0 e:/module/mc12705/arm-sdk/arm-nm6408-eabihf/bin/../lib/gcc/arm-nm6408-eabihf/8.3.0/../../../../arm-nm6408-eabihf/lib\libg.a(lib_a-nano-freer.o)
+ .data          0x0000000000000000        0x0 e:/module/mc12705/arm-sdk/arm-nm6408-eabihf/bin/../lib/gcc/arm-nm6408-eabihf/8.3.0/../../../../arm-nm6408-eabihf/lib\libg.a(lib_a-nano-freer.o)
+ .bss           0x0000000000000000        0x0 e:/module/mc12705/arm-sdk/arm-nm6408-eabihf/bin/../lib/gcc/arm-nm6408-eabihf/8.3.0/../../../../arm-nm6408-eabihf/lib\libg.a(lib_a-nano-freer.o)
+ .text._free_r  0x0000000000000000      0x114 e:/module/mc12705/arm-sdk/arm-nm6408-eabihf/bin/../lib/gcc/arm-nm6408-eabihf/8.3.0/../../../../arm-nm6408-eabihf/lib\libg.a(lib_a-nano-freer.o)
+ .debug_info    0x0000000000000000      0xb36 e:/module/mc12705/arm-sdk/arm-nm6408-eabihf/bin/../lib/gcc/arm-nm6408-eabihf/8.3.0/../../../../arm-nm6408-eabihf/lib\libg.a(lib_a-nano-freer.o)
+ .debug_abbrev  0x0000000000000000      0x2b4 e:/module/mc12705/arm-sdk/arm-nm6408-eabihf/bin/../lib/gcc/arm-nm6408-eabihf/8.3.0/../../../../arm-nm6408-eabihf/lib\libg.a(lib_a-nano-freer.o)
+ .debug_loc     0x0000000000000000      0x129 e:/module/mc12705/arm-sdk/arm-nm6408-eabihf/bin/../lib/gcc/arm-nm6408-eabihf/8.3.0/../../../../arm-nm6408-eabihf/lib\libg.a(lib_a-nano-freer.o)
+ .debug_aranges
+                0x0000000000000000       0x20 e:/module/mc12705/arm-sdk/arm-nm6408-eabihf/bin/../lib/gcc/arm-nm6408-eabihf/8.3.0/../../../../arm-nm6408-eabihf/lib\libg.a(lib_a-nano-freer.o)
+ .debug_ranges  0x0000000000000000       0x28 e:/module/mc12705/arm-sdk/arm-nm6408-eabihf/bin/../lib/gcc/arm-nm6408-eabihf/8.3.0/../../../../arm-nm6408-eabihf/lib\libg.a(lib_a-nano-freer.o)
+ .debug_line    0x0000000000000000      0x370 e:/module/mc12705/arm-sdk/arm-nm6408-eabihf/bin/../lib/gcc/arm-nm6408-eabihf/8.3.0/../../../../arm-nm6408-eabihf/lib\libg.a(lib_a-nano-freer.o)
+ .debug_str     0x0000000000000000      0x731 e:/module/mc12705/arm-sdk/arm-nm6408-eabihf/bin/../lib/gcc/arm-nm6408-eabihf/8.3.0/../../../../arm-nm6408-eabihf/lib\libg.a(lib_a-nano-freer.o)
+ .comment       0x0000000000000000       0x22 e:/module/mc12705/arm-sdk/arm-nm6408-eabihf/bin/../lib/gcc/arm-nm6408-eabihf/8.3.0/../../../../arm-nm6408-eabihf/lib\libg.a(lib_a-nano-freer.o)
+ .debug_frame   0x0000000000000000       0x38 e:/module/mc12705/arm-sdk/arm-nm6408-eabihf/bin/../lib/gcc/arm-nm6408-eabihf/8.3.0/../../../../arm-nm6408-eabihf/lib\libg.a(lib_a-nano-freer.o)
+ .text          0x0000000000000000        0x0 e:/module/mc12705/arm-sdk/arm-nm6408-eabihf/bin/../lib/gcc/arm-nm6408-eabihf/8.3.0/../../../../arm-nm6408-eabihf/lib\libg.a(lib_a-nano-mallocr.o)
+ .data          0x0000000000000000        0x0 e:/module/mc12705/arm-sdk/arm-nm6408-eabihf/bin/../lib/gcc/arm-nm6408-eabihf/8.3.0/../../../../arm-nm6408-eabihf/lib\libg.a(lib_a-nano-mallocr.o)
+ .bss           0x0000000000000000        0x0 e:/module/mc12705/arm-sdk/arm-nm6408-eabihf/bin/../lib/gcc/arm-nm6408-eabihf/8.3.0/../../../../arm-nm6408-eabihf/lib\libg.a(lib_a-nano-mallocr.o)
+ .text._malloc_r
+                0x0000000000000000      0x130 e:/module/mc12705/arm-sdk/arm-nm6408-eabihf/bin/../lib/gcc/arm-nm6408-eabihf/8.3.0/../../../../arm-nm6408-eabihf/lib\libg.a(lib_a-nano-mallocr.o)
+ .bss.__malloc_free_list
+                0x0000000000000000        0x4 e:/module/mc12705/arm-sdk/arm-nm6408-eabihf/bin/../lib/gcc/arm-nm6408-eabihf/8.3.0/../../../../arm-nm6408-eabihf/lib\libg.a(lib_a-nano-mallocr.o)
+ .bss.__malloc_sbrk_start
+                0x0000000000000000        0x4 e:/module/mc12705/arm-sdk/arm-nm6408-eabihf/bin/../lib/gcc/arm-nm6408-eabihf/8.3.0/../../../../arm-nm6408-eabihf/lib\libg.a(lib_a-nano-mallocr.o)
+ .debug_info    0x0000000000000000      0xc3b e:/module/mc12705/arm-sdk/arm-nm6408-eabihf/bin/../lib/gcc/arm-nm6408-eabihf/8.3.0/../../../../arm-nm6408-eabihf/lib\libg.a(lib_a-nano-mallocr.o)
+ .debug_abbrev  0x0000000000000000      0x30f e:/module/mc12705/arm-sdk/arm-nm6408-eabihf/bin/../lib/gcc/arm-nm6408-eabihf/8.3.0/../../../../arm-nm6408-eabihf/lib\libg.a(lib_a-nano-mallocr.o)
+ .debug_loc     0x0000000000000000      0x2ca e:/module/mc12705/arm-sdk/arm-nm6408-eabihf/bin/../lib/gcc/arm-nm6408-eabihf/8.3.0/../../../../arm-nm6408-eabihf/lib\libg.a(lib_a-nano-mallocr.o)
+ .debug_aranges
+                0x0000000000000000       0x20 e:/module/mc12705/arm-sdk/arm-nm6408-eabihf/bin/../lib/gcc/arm-nm6408-eabihf/8.3.0/../../../../arm-nm6408-eabihf/lib\libg.a(lib_a-nano-mallocr.o)
+ .debug_ranges  0x0000000000000000       0x40 e:/module/mc12705/arm-sdk/arm-nm6408-eabihf/bin/../lib/gcc/arm-nm6408-eabihf/8.3.0/../../../../arm-nm6408-eabihf/lib\libg.a(lib_a-nano-mallocr.o)
+ .debug_line    0x0000000000000000      0x3a0 e:/module/mc12705/arm-sdk/arm-nm6408-eabihf/bin/../lib/gcc/arm-nm6408-eabihf/8.3.0/../../../../arm-nm6408-eabihf/lib\libg.a(lib_a-nano-mallocr.o)
+ .debug_str     0x0000000000000000      0x748 e:/module/mc12705/arm-sdk/arm-nm6408-eabihf/bin/../lib/gcc/arm-nm6408-eabihf/8.3.0/../../../../arm-nm6408-eabihf/lib\libg.a(lib_a-nano-mallocr.o)
+ .comment       0x0000000000000000       0x22 e:/module/mc12705/arm-sdk/arm-nm6408-eabihf/bin/../lib/gcc/arm-nm6408-eabihf/8.3.0/../../../../arm-nm6408-eabihf/lib\libg.a(lib_a-nano-mallocr.o)
+ .debug_frame   0x0000000000000000       0x30 e:/module/mc12705/arm-sdk/arm-nm6408-eabihf/bin/../lib/gcc/arm-nm6408-eabihf/8.3.0/../../../../arm-nm6408-eabihf/lib\libg.a(lib_a-nano-mallocr.o)
+ .text          0x0000000000000000        0x0 e:/module/mc12705/arm-sdk/arm-nm6408-eabihf/bin/../lib/gcc/arm-nm6408-eabihf/8.3.0/../../../../arm-nm6408-eabihf/lib\libg.a(lib_a-sbrkr.o)
+ .data          0x0000000000000000        0x0 e:/module/mc12705/arm-sdk/arm-nm6408-eabihf/bin/../lib/gcc/arm-nm6408-eabihf/8.3.0/../../../../arm-nm6408-eabihf/lib\libg.a(lib_a-sbrkr.o)
+ .bss           0x0000000000000000        0x0 e:/module/mc12705/arm-sdk/arm-nm6408-eabihf/bin/../lib/gcc/arm-nm6408-eabihf/8.3.0/../../../../arm-nm6408-eabihf/lib\libg.a(lib_a-sbrkr.o)
+ .text._sbrk_r  0x0000000000000000       0x38 e:/module/mc12705/arm-sdk/arm-nm6408-eabihf/bin/../lib/gcc/arm-nm6408-eabihf/8.3.0/../../../../arm-nm6408-eabihf/lib\libg.a(lib_a-sbrkr.o)
+ .debug_info    0x0000000000000000      0x9d6 e:/module/mc12705/arm-sdk/arm-nm6408-eabihf/bin/../lib/gcc/arm-nm6408-eabihf/8.3.0/../../../../arm-nm6408-eabihf/lib\libg.a(lib_a-sbrkr.o)
+ .debug_abbrev  0x0000000000000000      0x250 e:/module/mc12705/arm-sdk/arm-nm6408-eabihf/bin/../lib/gcc/arm-nm6408-eabihf/8.3.0/../../../../arm-nm6408-eabihf/lib\libg.a(lib_a-sbrkr.o)
+ .debug_loc     0x0000000000000000       0x5c e:/module/mc12705/arm-sdk/arm-nm6408-eabihf/bin/../lib/gcc/arm-nm6408-eabihf/8.3.0/../../../../arm-nm6408-eabihf/lib\libg.a(lib_a-sbrkr.o)
+ .debug_aranges
+                0x0000000000000000       0x20 e:/module/mc12705/arm-sdk/arm-nm6408-eabihf/bin/../lib/gcc/arm-nm6408-eabihf/8.3.0/../../../../arm-nm6408-eabihf/lib\libg.a(lib_a-sbrkr.o)
+ .debug_ranges  0x0000000000000000       0x10 e:/module/mc12705/arm-sdk/arm-nm6408-eabihf/bin/../lib/gcc/arm-nm6408-eabihf/8.3.0/../../../../arm-nm6408-eabihf/lib\libg.a(lib_a-sbrkr.o)
+ .debug_line    0x0000000000000000      0x27f e:/module/mc12705/arm-sdk/arm-nm6408-eabihf/bin/../lib/gcc/arm-nm6408-eabihf/8.3.0/../../../../arm-nm6408-eabihf/lib\libg.a(lib_a-sbrkr.o)
+ .debug_str     0x0000000000000000      0x644 e:/module/mc12705/arm-sdk/arm-nm6408-eabihf/bin/../lib/gcc/arm-nm6408-eabihf/8.3.0/../../../../arm-nm6408-eabihf/lib\libg.a(lib_a-sbrkr.o)
+ .comment       0x0000000000000000       0x22 e:/module/mc12705/arm-sdk/arm-nm6408-eabihf/bin/../lib/gcc/arm-nm6408-eabihf/8.3.0/../../../../arm-nm6408-eabihf/lib\libg.a(lib_a-sbrkr.o)
+ .debug_frame   0x0000000000000000       0x2c e:/module/mc12705/arm-sdk/arm-nm6408-eabihf/bin/../lib/gcc/arm-nm6408-eabihf/8.3.0/../../../../arm-nm6408-eabihf/lib\libg.a(lib_a-sbrkr.o)
+ .text          0x0000000000000000        0x0 e:/module/mc12705/arm-sdk/arm-nm6408-eabihf/bin/../lib/gcc/arm-nm6408-eabihf/8.3.0/../../../../arm-nm6408-eabihf/lib\libg.a(lib_a-mlock.o)
+ .data          0x0000000000000000        0x0 e:/module/mc12705/arm-sdk/arm-nm6408-eabihf/bin/../lib/gcc/arm-nm6408-eabihf/8.3.0/../../../../arm-nm6408-eabihf/lib\libg.a(lib_a-mlock.o)
+ .bss           0x0000000000000000        0x0 e:/module/mc12705/arm-sdk/arm-nm6408-eabihf/bin/../lib/gcc/arm-nm6408-eabihf/8.3.0/../../../../arm-nm6408-eabihf/lib\libg.a(lib_a-mlock.o)
+ .text.__malloc_lock
+                0x0000000000000000        0x4 e:/module/mc12705/arm-sdk/arm-nm6408-eabihf/bin/../lib/gcc/arm-nm6408-eabihf/8.3.0/../../../../arm-nm6408-eabihf/lib\libg.a(lib_a-mlock.o)
+ .text.__malloc_unlock
+                0x0000000000000000        0x4 e:/module/mc12705/arm-sdk/arm-nm6408-eabihf/bin/../lib/gcc/arm-nm6408-eabihf/8.3.0/../../../../arm-nm6408-eabihf/lib\libg.a(lib_a-mlock.o)
+ .debug_info    0x0000000000000000      0x92f e:/module/mc12705/arm-sdk/arm-nm6408-eabihf/bin/../lib/gcc/arm-nm6408-eabihf/8.3.0/../../../../arm-nm6408-eabihf/lib\libg.a(lib_a-mlock.o)
+ .debug_abbrev  0x0000000000000000      0x1f2 e:/module/mc12705/arm-sdk/arm-nm6408-eabihf/bin/../lib/gcc/arm-nm6408-eabihf/8.3.0/../../../../arm-nm6408-eabihf/lib\libg.a(lib_a-mlock.o)
+ .debug_aranges
+                0x0000000000000000       0x20 e:/module/mc12705/arm-sdk/arm-nm6408-eabihf/bin/../lib/gcc/arm-nm6408-eabihf/8.3.0/../../../../arm-nm6408-eabihf/lib\libg.a(lib_a-mlock.o)
+ .debug_ranges  0x0000000000000000       0x10 e:/module/mc12705/arm-sdk/arm-nm6408-eabihf/bin/../lib/gcc/arm-nm6408-eabihf/8.3.0/../../../../arm-nm6408-eabihf/lib\libg.a(lib_a-mlock.o)
+ .debug_line    0x0000000000000000      0x228 e:/module/mc12705/arm-sdk/arm-nm6408-eabihf/bin/../lib/gcc/arm-nm6408-eabihf/8.3.0/../../../../arm-nm6408-eabihf/lib\libg.a(lib_a-mlock.o)
+ .debug_str     0x0000000000000000      0x614 e:/module/mc12705/arm-sdk/arm-nm6408-eabihf/bin/../lib/gcc/arm-nm6408-eabihf/8.3.0/../../../../arm-nm6408-eabihf/lib\libg.a(lib_a-mlock.o)
+ .comment       0x0000000000000000       0x22 e:/module/mc12705/arm-sdk/arm-nm6408-eabihf/bin/../lib/gcc/arm-nm6408-eabihf/8.3.0/../../../../arm-nm6408-eabihf/lib\libg.a(lib_a-mlock.o)
+ .debug_frame   0x0000000000000000       0x30 e:/module/mc12705/arm-sdk/arm-nm6408-eabihf/bin/../lib/gcc/arm-nm6408-eabihf/8.3.0/../../../../arm-nm6408-eabihf/lib\libg.a(lib_a-mlock.o)
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+IMB              0x0000000000000000 0x0000000000060000 axrw
+*default*        0x0000000000000000 0xffffffffffffffff
+
+Linker script and memory map
+
+LOAD E:/Module/MC12705/mc12705_bsp_x64/lib\libnm6408load_arm.a
+LOAD CMakeFiles/simple.elf.dir/src/simple.c.obj
+START GROUP
+LOAD e:/module/mc12705/arm-sdk/arm-nm6408-eabihf/bin/../lib/gcc/arm-nm6408-eabihf/8.3.0\libgcc.a
+LOAD e:/module/mc12705/arm-sdk/arm-nm6408-eabihf/bin/../lib/gcc/arm-nm6408-eabihf/8.3.0/../../../../arm-nm6408-eabihf/lib\libg.a
+LOAD e:/module/mc12705/arm-sdk/arm-nm6408-eabihf/bin/../lib/gcc/arm-nm6408-eabihf/8.3.0/../../../../arm-nm6408-eabihf/lib\libc.a
+END GROUP
+START GROUP
+LOAD e:/module/mc12705/arm-sdk/arm-nm6408-eabihf/bin/../lib/gcc/arm-nm6408-eabihf/8.3.0\libgcc.a
+LOAD e:/module/mc12705/arm-sdk/arm-nm6408-eabihf/bin/../lib/gcc/arm-nm6408-eabihf/8.3.0/../../../../arm-nm6408-eabihf/lib\libc.a
+LOAD e:/module/mc12705/arm-sdk/arm-nm6408-eabihf/bin/../lib/gcc/arm-nm6408-eabihf/8.3.0/../../../../arm-nm6408-eabihf/lib\libnosys.a
+END GROUP
+                0x0000000000000000                PROVIDE (__executable_start = ORIGIN (IMB))
+                0x0000000000000000                . = ORIGIN (IMB)
+
+.text.init_start
+                0x0000000000000000      0x2c8
+ *crt0.o(.text .text.* .gnu.linkonce.t.*)
+ *(.text.init_start)
+ .text.init_start
+                0x0000000000000000      0x1c4 E:/Module/MC12705/mc12705_bsp_x64/lib\libnm6408load_arm.a(arm_start.o)
+                0x0000000000000000                _start
+                0x0000000000000000                hardware_init_hook
+                0x00000000000001a8                _arm_irq_table
+ *(.text.set_stack)
+ .text.set_stack
+                0x00000000000001c4      0x104 E:/Module/MC12705/mc12705_bsp_x64/lib\libnm6408load_arm.a(arm_start.o)
+                0x00000000000001c4                _stack_set_call
+
+.init           0x00000000000002c8       0x20
+ *(.init.stub_start)
+ .init.stub_start
+                0x00000000000002c8       0x14 E:/Module/MC12705/mc12705_bsp_x64/lib\libnm6408load_arm.a(arm_start.o)
+                0x00000000000002cc                _init
+ *(SORT_NONE(.init))
+ *(.init.stub_end)
+ .init.stub_end
+                0x00000000000002dc        0xc E:/Module/MC12705/mc12705_bsp_x64/lib\libnm6408load_arm.a(arm_start.o)
+
+.plt            0x00000000000002e8        0x0
+ *(.plt)
+ *(.iplt)
+ .iplt          0x00000000000002e8        0x0 E:/Module/MC12705/mc12705_bsp_x64/lib\libnm6408load_arm.a(arm_start.o)
+
+.text           0x00000000000002e8      0x1ec
+ *(EXCLUDE_FILE(*crt0.o) .text .text.* .gnu.linkonce.t.*)
+ .text._exit    0x00000000000002e8       0x58 E:/Module/MC12705/mc12705_bsp_x64/lib\libnm6408load_arm.a(arm_stop.o)
+                0x00000000000002e8                _exit
+ .text.__wrap_main
+                0x0000000000000340       0xb0 E:/Module/MC12705/mc12705_bsp_x64/lib\libnm6408load_arm.a(arm_wrap.o)
+                0x0000000000000340                __wrap_main
+ .text.__wrap_exit
+                0x00000000000003f0       0x68 E:/Module/MC12705/mc12705_bsp_x64/lib\libnm6408load_arm.a(arm_wrap.o)
+                0x00000000000003f0                __wrap_exit
+ .text          0x0000000000000458       0x7c CMakeFiles/simple.elf.dir/src/simple.c.obj
+                0x0000000000000458                fact
+                0x00000000000004ac                main
+ *(.stub .stub.*)
+ *(.gnu.warning)
+ *(.glue_7t)
+ .glue_7t       0x00000000000004d4        0x0 linker stubs
+ *(.glue_7)
+ .glue_7        0x00000000000004d4        0x0 linker stubs
+ *(.vfp11_veneer)
+ .vfp11_veneer  0x00000000000004d4        0x0 linker stubs
+ *(.v4_bx)
+ .v4_bx         0x00000000000004d4        0x0 linker stubs
+
+.fini           0x00000000000004d4       0x20
+ *(.fini.stub_start)
+ .fini.stub_start
+                0x00000000000004d4       0x14 E:/Module/MC12705/mc12705_bsp_x64/lib\libnm6408load_arm.a(arm_start.o)
+                0x00000000000004d8                _fini
+ *(SORT_NONE(.fini))
+ *(.fini.stub_end)
+ .fini.stub_end
+                0x00000000000004e8        0xc E:/Module/MC12705/mc12705_bsp_x64/lib\libnm6408load_arm.a(arm_start.o)
+                [!provide]                        PROVIDE (__etext = .)
+                [!provide]                        PROVIDE (_etext = .)
+                [!provide]                        PROVIDE (etext = .)
+
+.rodata
+ *(.rodata .rodata.* .gnu.linkonce.r.*)
+
+.ARM.extab
+ *(.ARM.extab* .gnu.linkonce.armextab.*)
+
+.ARM.exidx      0x00000000000004f4        0x0
+                [!provide]                        PROVIDE (__exidx_start = ABSOLUTE (.))
+ *(.ARM.exidx* .gnu.linkonce.armexidx.*)
+                [!provide]                        PROVIDE (__exidx_end = ABSOLUTE (.))
+
+.eh_frame_hdr
+ *(.eh_frame_hdr)
+ *(.eh_frame_entry .eh_frame_entry.*)
+
+.eh_frame
+ *(.eh_frame)
+ *(.eh_frame.*)
+
+.gcc_except_table
+ *(.gcc_except_table .gcc_except_table.*)
+
+.gnu_extab
+ *(.gnu_extab*)
+
+.exception_ranges
+ *(.exception_ranges*)
+                0x00000000000004f4                . = .
+
+.eh_frame
+ *(.eh_frame)
+ *(.eh_frame.*)
+
+.gnu_extab
+ *(.gnu_extab)
+
+.gcc_except_table
+ *(.gcc_except_table .gcc_except_table.*)
+
+.exception_ranges
+ *(.exception_ranges*)
+
+.preinit_array  0x00000000000004f4        0x0
+                0x00000000000004f4                PROVIDE (__preinit_array_start = ABSOLUTE (.))
+ *(.preinit_array)
+                0x00000000000004f4                PROVIDE (__preinit_array_end = ABSOLUTE (.))
+                0x00000000000004f4                __fix_1__ = .
+
+.init_array     0x00000000000004f4        0x0
+                0x00000000000004f4                PROVIDE (__init_array_start = ABSOLUTE (.))
+ *(SORT_BY_INIT_PRIORITY(.init_array.*) SORT_BY_INIT_PRIORITY(.ctors.*))
+ *(.init_array EXCLUDE_FILE(*crtend?.o *crtend.o *crtbegin?.o *crtbegin.o) .ctors)
+                0x00000000000004f4                PROVIDE (__init_array_end = ABSOLUTE (.))
+                0x00000000000004f4                __fix_2__ = .
+
+.fini_array     0x00000000000004f4        0x0
+                0x00000000000004f4                PROVIDE (__fini_array_start = ABSOLUTE (.))
+ *(SORT_BY_INIT_PRIORITY(.fini_array.*) SORT_BY_INIT_PRIORITY(.dtors.*))
+ *(.fini_array EXCLUDE_FILE(*crtend?.o *crtend.o *crtbegin?.o *crtbegin.o) .dtors)
+                0x00000000000004f4                PROVIDE (__fini_array_end = ABSOLUTE (.))
+                0x00000000000004f4                __fix_3__ = .
+
+.ctors
+ *crtbegin.o(.ctors)
+ *crtbegin?.o(.ctors)
+ *(EXCLUDE_FILE(*crtend?.o *crtend.o) .ctors)
+ *(SORT_BY_NAME(.ctors.*))
+ *(.ctors)
+
+.dtors
+ *crtbegin.o(.dtors)
+ *crtbegin?.o(.dtors)
+ *(EXCLUDE_FILE(*crtend?.o *crtend.o) .dtors)
+ *(SORT_BY_NAME(.dtors.*))
+ *(.dtors)
+
+.got            0x00000000000004f4        0x0
+ *(.got.plt)
+ *(.igot.plt)
+ .igot.plt      0x00000000000004f4        0x0 E:/Module/MC12705/mc12705_bsp_x64/lib\libnm6408load_arm.a(arm_start.o)
+ *(.got)
+ *(.igot)
+
+.data
+ *(.data .data.* .gnu.linkonce.d.*)
+                0x00000000000004f4                _edata = .
+                [!provide]                        PROVIDE (edata = .)
+                0x00000000000004f4                . = .
+
+.bss            0x00000000000004f4      0x100
+                0x00000000000004f4                __bss_start__ = ABSOLUTE (.)
+ *(.bss .bss.* .gnu.linkonce.b.*)
+ *(COMMON)
+                0x00000000000005f4                . = (ALIGN ((. != 0x0)?0x4:0x1) + 0x100)
+ *fill*         0x00000000000004f4      0x100 
+                0x00000000000005f4                __bss_end__ = ABSOLUTE (.)
+                0x00000000000005f4                __end__ = .
+                0x00000000000005f4                _end = .
+                [!provide]                        PROVIDE (end = .)
+                0x00000000000005f4                . = .
+
+.heap           0x00000000000005f8     0x8000
+                0x00000000000005f8                PROVIDE (__heap_start = ABSOLUTE (.))
+                0x00000000000085f8                . = (. + 0x8000)
+ *fill*         0x00000000000005f8     0x8000 
+                0x00000000000085f8                PROVIDE (__heap_end = ABSOLUTE (.))
+
+.stack          0x00000000000085f8     0x8000
+                0x00000000000085f8                __stack_end = ABSOLUTE (.)
+                0x000000000000a5f8                . = (. + 0x2000)
+ *fill*         0x00000000000085f8     0x2000 
+                0x000000000000a5f8                __stack_usr = ABSOLUTE (.)
+                0x000000000000e5f8                . = (. + 0x4000)
+ *fill*         0x000000000000a5f8     0x4000 
+                0x000000000000e5f8                __stack_svc = ABSOLUTE (.)
+                0x000000000000e9f8                . = (. + 0x400)
+ *fill*         0x000000000000e5f8      0x400 
+                0x000000000000e9f8                __stack_und = ABSOLUTE (.)
+                0x000000000000edf8                . = (. + 0x400)
+ *fill*         0x000000000000e9f8      0x400 
+                0x000000000000edf8                __stack_abt = ABSOLUTE (.)
+                0x000000000000f1f8                . = (. + 0x400)
+ *fill*         0x000000000000edf8      0x400 
+                0x000000000000f1f8                __stack_fiq = ABSOLUTE (.)
+                0x00000000000101f8                . = (. + 0x1000)
+ *fill*         0x000000000000f1f8     0x1000 
+                0x00000000000101f8                __stack_irq = ABSOLUTE (.)
+                0x00000000000105f8                . = (. + 0x400)
+ *fill*         0x00000000000101f8      0x400 
+                0x00000000000105f8                __stack_mon = ABSOLUTE (.)
+                0x00000000000105f8                __stack_start = ABSOLUTE (.)
+
+.stab
+ *(.stab)
+
+.stabstr
+ *(.stabstr)
+
+.stab.excl
+ *(.stab.excl)
+
+.stab.exclstr
+ *(.stab.exclstr)
+
+.stab.index
+ *(.stab.index)
+
+.stab.indexstr
+ *(.stab.indexstr)
+
+.comment        0x0000000000000000       0x21
+ *(.comment)
+ .comment       0x0000000000000000       0x21 E:/Module/MC12705/mc12705_bsp_x64/lib\libnm6408load_arm.a(arm_stop.o)
+                                         0x22 (size before relaxing)
+ .comment       0x0000000000000021       0x22 E:/Module/MC12705/mc12705_bsp_x64/lib\libnm6408load_arm.a(arm_wrap.o)
+ .comment       0x0000000000000021       0x22 CMakeFiles/simple.elf.dir/src/simple.c.obj
+
+.gnu.build.attributes
+ *(.gnu.build.attributes .gnu.build.attributes.*)
+
+.debug
+ *(.debug)
+
+.line
+ *(.line)
+
+.debug_srcinfo
+ *(.debug_srcinfo)
+
+.debug_sfnames
+ *(.debug_sfnames)
+
+.debug_aranges  0x0000000000000000       0x20
+ *(.debug_aranges)
+ .debug_aranges
+                0x0000000000000000       0x20 CMakeFiles/simple.elf.dir/src/simple.c.obj
+
+.debug_pubnames
+ *(.debug_pubnames)
+
+.debug_info     0x0000000000000000       0x8a
+ *(.debug_info .gnu.linkonce.wi.*)
+ .debug_info    0x0000000000000000       0x8a CMakeFiles/simple.elf.dir/src/simple.c.obj
+
+.debug_abbrev   0x0000000000000000       0x79
+ *(.debug_abbrev)
+ .debug_abbrev  0x0000000000000000       0x79 CMakeFiles/simple.elf.dir/src/simple.c.obj
+
+.debug_line     0x0000000000000000       0x7f
+ *(.debug_line .debug_line.* .debug_line_end)
+ .debug_line    0x0000000000000000       0x7f CMakeFiles/simple.elf.dir/src/simple.c.obj
+
+.debug_frame    0x0000000000000000       0x50
+ *(.debug_frame)
+ .debug_frame   0x0000000000000000       0x50 CMakeFiles/simple.elf.dir/src/simple.c.obj
+
+.debug_str      0x0000000000000000       0xd2
+ *(.debug_str)
+ .debug_str     0x0000000000000000       0xd2 CMakeFiles/simple.elf.dir/src/simple.c.obj
+
+.debug_loc
+ *(.debug_loc)
+
+.debug_macinfo
+ *(.debug_macinfo)
+
+.debug_weaknames
+ *(.debug_weaknames)
+
+.debug_funcnames
+ *(.debug_funcnames)
+
+.debug_typenames
+ *(.debug_typenames)
+
+.debug_varnames
+ *(.debug_varnames)
+
+.debug_pubtypes
+ *(.debug_pubtypes)
+
+.debug_ranges
+ *(.debug_ranges)
+
+.debug_macro
+ *(.debug_macro)
+
+.debug_addr
+ *(.debug_addr)
+
+.ARM.attributes
+                0x0000000000000000       0x33
+ *(.ARM.attributes)
+ .ARM.attributes
+                0x0000000000000000       0x23 E:/Module/MC12705/mc12705_bsp_x64/lib\libnm6408load_arm.a(arm_start.o)
+ .ARM.attributes
+                0x0000000000000023       0x37 E:/Module/MC12705/mc12705_bsp_x64/lib\libnm6408load_arm.a(arm_aux.o)
+ .ARM.attributes
+                0x000000000000005a       0x37 E:/Module/MC12705/mc12705_bsp_x64/lib\libnm6408load_arm.a(arm_sync.o)
+ .ARM.attributes
+                0x0000000000000091       0x37 E:/Module/MC12705/mc12705_bsp_x64/lib\libnm6408load_arm.a(arm_stub.o)
+ .ARM.attributes
+                0x00000000000000c8       0x37 E:/Module/MC12705/mc12705_bsp_x64/lib\libnm6408load_arm.a(arm_stop.o)
+ .ARM.attributes
+                0x00000000000000ff       0x37 E:/Module/MC12705/mc12705_bsp_x64/lib\libnm6408load_arm.a(arm_wrap.o)
+ .ARM.attributes
+                0x0000000000000136       0x37 CMakeFiles/simple.elf.dir/src/simple.c.obj
+ .ARM.attributes
+                0x000000000000016d       0x37 e:/module/mc12705/arm-sdk/arm-nm6408-eabihf/bin/../lib/gcc/arm-nm6408-eabihf/8.3.0/../../../../arm-nm6408-eabihf/lib\libg.a(lib_a-reent.o)
+ .ARM.attributes
+                0x00000000000001a4       0x3d e:/module/mc12705/arm-sdk/arm-nm6408-eabihf/bin/../lib/gcc/arm-nm6408-eabihf/8.3.0/../../../../arm-nm6408-eabihf/lib\libg.a(lib_a-impure.o)
+ .ARM.attributes
+                0x00000000000001e1       0x37 e:/module/mc12705/arm-sdk/arm-nm6408-eabihf/bin/../lib/gcc/arm-nm6408-eabihf/8.3.0/../../../../arm-nm6408-eabihf/lib\libg.a(lib_a-nano-freer.o)
+ .ARM.attributes
+                0x0000000000000218       0x37 e:/module/mc12705/arm-sdk/arm-nm6408-eabihf/bin/../lib/gcc/arm-nm6408-eabihf/8.3.0/../../../../arm-nm6408-eabihf/lib\libg.a(lib_a-nano-mallocr.o)
+ .ARM.attributes
+                0x000000000000024f       0x37 e:/module/mc12705/arm-sdk/arm-nm6408-eabihf/bin/../lib/gcc/arm-nm6408-eabihf/8.3.0/../../../../arm-nm6408-eabihf/lib\libg.a(lib_a-sbrkr.o)
+ .ARM.attributes
+                0x0000000000000286       0x37 e:/module/mc12705/arm-sdk/arm-nm6408-eabihf/bin/../lib/gcc/arm-nm6408-eabihf/8.3.0/../../../../arm-nm6408-eabihf/lib\libg.a(lib_a-mlock.o)
+ *(.gnu.attributes)
+
+.note.gnu.arm.ident
+ *(.note.gnu.arm.ident)
+
+/DISCARD/
+ *(.interp)
+ *(.note.gnu.build-id)
+ *(.hash)
+ *(.gnu.hash)
+ *(.dynsym)
+ *(.dynstr)
+ *(.gnu.version)
+ *(.gnu.version_d)
+ *(.gnu.version_r)
+ *(.rel.*)
+ *(.rela.*)
+ *(.rodata1)
+ *(.sdata2 .sdata2.* .gnu.linkonce.s2.*)
+ *(.data1)
+ *(.sdata .sdata.* .gnu.linkonce.s.*)
+ *(.tdata .tdata.* .gnu.linkonce.td.*)
+ *(.tbss .tbss.* .gnu.linkonce.tb.*)
+ *(.tcommon)
+ *(.jcr)
+ *(.data.rel.ro.local* .gnu.linkonce.d.rel.ro.local.*)
+ *(.data.rel.ro .data.rel.ro.* .gnu.linkonce.d.rel.ro.*)
+ *(.dynamic)
+ *(.dynbss)
+ *(.dynsbss)
+ *(.sbss .sbss.* .gnu.linkonce.sb.*)
+ *(.sbss2 .sbss2.* .gnu.linkonce.sb2.*)
+ *(.scommon)
+ *(.dynlbss)
+ *(.lbss .lbss.* .gnu.linkonce.lb.*)
+ *(.lrodata .lrodata.* .gnu.linkonce.lr.*)
+ *(.ldata .ldata.* .gnu.linkonce.l.*)
+ *(.note.GNU-stack)
+ *(.gnu_debuglink)
+ *(.gnu.lto_*)
+OUTPUT(simple.elf elf32-littlearm)

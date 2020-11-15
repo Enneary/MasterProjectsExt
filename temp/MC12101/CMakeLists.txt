@@ -16,7 +16,6 @@ endif()
 find_path(TOOLCHAIN_ROOT
 	NAMES
 		${TRIPLE}-gcc.exe
-
 	PATHS
 		$ENV{AVR_ROOT}
 )

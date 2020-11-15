@@ -6,8 +6,9 @@
 	"repository": {
         "type": "git",
         "url": "https://github.com/Enneary/MasterProjectsExt"
-    },
-	"version": "0.1.0",
+	},
+	"icon": "images/logo128.png",
+	"version": "0.1.1",
 	"enableProposedApi": false,
 	"engines": {
 		"vscode": "^1.41.0"

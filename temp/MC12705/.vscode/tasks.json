@@ -1,0 +1,21 @@
+{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558
+    // for the documentation about the tasks.json format
+   
+    "version": "2.0.0",
+    "tasks": [{
+        "label": "test_run",
+        "command": "${env:mc12705}/bin/mc12705run {DirPath}/{ProjectName}/build/test.elf", 
+        "type": "shell"
+    }]
+}
+
+// Скомпилировать проект руками:
+
+//arm-nm6408-eabihf-g++.exe --entry=_start                 --entry=_start  входная точка в программу, у elf файла секции ии одна из них start можешь посмотреть в lds
+//-std=gnu99 -O0 -nostartfiles -Wl,                        nostartfiles не использовать стандартные startup файлы, которые расположены в системе 
+//--wrap=exit -Wl,--wrap=main                              у тебя была проблема тут, так не используются стандартные crt0  файл, необходимо линкеру сказать что он искал символы у тебя в коде
+//-static                                                  -static - статическая сборка, это не обязательно
+//-Wl,--nmagic -Wl,--gc-sections 
+//-Tcentral_arm_skeleton.lds 
+// hello.cpp -o test.elf

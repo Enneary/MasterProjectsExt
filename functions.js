@@ -1,5 +1,6 @@
 let path = require('path');
 let fs = require('fs');
+let os = require('os');
 var dict = require('./temp/template.js');
 const { Uri } = require('vscode');
 const { url } = require('inspector');
@@ -57,6 +58,13 @@ function OpenFolderDialog(vscode, panel, type){
 }
 //создание файлов проекта
 function CreateFiles(context, vscode, res){
+    //Настройка Cmake в соответсвии с системой пользователя
+    
+    if(os.platform() == "win32")
+        res["cmake_generator"] = "MinGW Makefiles"
+    else if (os.platform() == "linux")
+        res["cmake_generator"] = "Ninja";
+
     //Создаем папку проекта
     let newDir = path.join(res.DirPath, res.ProjectName);
     if (!fs.existsSync(newDir)){
@@ -115,7 +123,7 @@ function copyFileSync( source, target, tempDict, res ) {
             targetFile = path.join( target, path.basename( source ) );
         }
     }
-    
+    let ext = path.extname(source);
     let data = fs.readFileSync(source, 'utf8');
     if(tempDict){
         
@@ -126,6 +134,10 @@ function copyFileSync( source, target, tempDict, res ) {
             });
             
         } 
+        if((ext == '.json' || ext == '.txt' || ext == '.cmake') && os.platform() == 'linux' ){
+            data = data.replace(new RegExp("[].]exe", 'g'), "");
+        }
+
     } 
     fs.writeFileSync(targetFile, data);
 }
