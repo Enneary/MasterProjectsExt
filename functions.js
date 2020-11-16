@@ -59,11 +59,15 @@ function OpenFolderDialog(vscode, panel, type){
 //создание файлов проекта
 function CreateFiles(context, vscode, res){
     //Настройка Cmake в соответсвии с системой пользователя
-    
-    if(os.platform() == "win32")
+    res["cmake_generator"] = "";
+    res["mc_bin"] ="";
+    if(os.platform() == "win32"){
         res["cmake_generator"] = "MinGW Makefiles"
-    else if (os.platform() == "linux")
+        res["mc_bin"] = "bin";
+    }else if (os.platform() == "linux"){
         res["cmake_generator"] = "Ninja";
+        res["mc_bin"] = "run/make";
+    }
 
     //Создаем папку проекта
     let newDir = path.join(res.DirPath, res.ProjectName);
@@ -126,7 +130,6 @@ function copyFileSync( source, target, tempDict, res ) {
     let ext = path.extname(source);
     let data = fs.readFileSync(source, 'utf8');
     if(tempDict){
-        
         if(tempDict[path.basename(source)]) {
             
             tempDict[path.basename(source)].forEach(element => {
@@ -134,8 +137,8 @@ function copyFileSync( source, target, tempDict, res ) {
             });
             
         } 
-        if((ext == '.json' || ext == '.txt' || ext == '.cmake') && os.platform() == 'linux' ){
-            data = data.replace(new RegExp("[].]exe", 'g'), "");
+        if(os.platform() == 'linux' && (ext == '.json' || ext == '.txt' || ext == '.cmake')){
+            data = data.replace(new RegExp("[.]exe", 'g'), "");
         }
 
     } 
